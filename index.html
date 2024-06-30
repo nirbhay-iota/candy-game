@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="menu-container" class="container">
+        <div class="menu">
+            <button class="menu-button" onclick="showGame()">Play</button>
+            <button class="menu-button" onclick="aboutGame()">About Game</button>
+            <button class="menu-button" onclick="howToPlay()">How to Play?</button>
+            <button class="menu-button" onclick="exitGame()">Exit</button>
+        </div>
+    </div>
+    <div id="game-container" class="container hidden">
+        <div class="game-board">
+            <!-- Game board will be generated here -->
+        </div>
+        <button class="menu-button" onclick="startGame()">Start</button>
+        <button class="menu-button" onclick="backToMenu()">Back to Menu</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
